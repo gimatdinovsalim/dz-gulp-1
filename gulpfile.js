@@ -8,7 +8,7 @@ gulp.task('server', ['styles'], function() {
     	server: { baseDir: './app/'}
     });
     gulp.watch('./app/**/*.html').on('change', browserSync.reload);
-    gulp.watch('./app/sass/**/*.scss', ['sass']);
+    gulp.watch('./app/sass/**/*.scss', ['styles']);
 });
 
 
