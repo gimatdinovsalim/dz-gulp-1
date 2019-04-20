@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var sass = require('gulp-sass');
 
+var sass = require('gulp-sass');
 
 gulp.task('server', ['styles'], function() {
     browserSync.init({
@@ -9,8 +9,8 @@ gulp.task('server', ['styles'], function() {
     });
     gulp.watch('./app/**/*.html').on('change', browserSync.reload);
     gulp.watch('./app/sass/**/*.scss', ['styles']);
-});
 
+});
 
 
 gulp.task('styles', function() {
